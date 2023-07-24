@@ -41,7 +41,8 @@ namespace Lucky44.Placer
 
             selected = g;
             previewModel = GameObject.Instantiate(selected);
-            previewModel.name = "==PREVIEW==";
+            previewModel.name = "LUCKYPLACRPREVIEW";
+            previewModel.hideFlags = HideFlags.HideInHierarchy;
             List<Collider> colliders = new List<Collider>();
             colliders.AddRange(previewModel.GetComponents<Collider>());
             colliders.AddRange(previewModel.GetComponentsInChildren<Collider>());
